@@ -1,7 +1,13 @@
 <script>
   import "../app.css";
-  import Footer from '../components/Footer.svelte';
+  import { goto } from "$app/navigation";
+
+  const handleClick = () => {
+    console.log("Placing your order");
+    goto('/products')
+  };
 </script>
+
 <nav class="p-3 bg-green-400 mb-2 space-x-4 font-semibold">
   <a href="/">Home</a>
   <a href="/about">About</a>
@@ -14,5 +20,5 @@
   <a href="/marketing/">Marketing(optional param)</a>
   <a href="/marketing/fr">Marketing(Fr)</a>
 </nav>
+<button on:click={handleClick}>Place Order</button>
 <slot />
-<Footer />
