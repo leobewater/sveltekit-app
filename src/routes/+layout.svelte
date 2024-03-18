@@ -1,5 +1,7 @@
 <script>
   import "../app.css";
+  import Header from './header.svelte';
+  import Footer from './footer.svelte';
   import { goto, beforeNavigate, afterNavigate } from "$app/navigation";
 
   const handleClick = () => {
@@ -31,23 +33,8 @@
   <a href="/marketing/fr">Marketing(Fr)</a>
 </nav>
 <button on:click={handleClick}>Place Order</button>
-<header class="layout-header">Header</header>
-<slot />
-<footer class="layout-footer">Footer</footer>
 
-<style>
-  .layout-header {
-    background-color: #264653;
-    color: #f4a261;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-  }
-  .layout-footer {
-    background-color: #264653;
-    color: #e9c46a;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-  }
-</style>
+<Header />
+<slot />
+<Footer />
+
