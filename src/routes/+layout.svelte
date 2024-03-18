@@ -1,7 +1,7 @@
 <script>
   import "../app.css";
-  import Header from './header.svelte';
-  import Footer from './footer.svelte';
+  import Header from '$lib/header.svelte';
+  import Footer from '$lib/footer.svelte';
   import { goto, beforeNavigate, afterNavigate } from "$app/navigation";
 
   const handleClick = () => {
