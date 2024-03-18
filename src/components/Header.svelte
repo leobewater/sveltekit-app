@@ -14,6 +14,7 @@
       <a href="#product" class="duration-200 hover:text-indigo-400 cursor-pointer">Product</a>
       <a href="#reviews" class="duration-200 hover:text-indigo-400 cursor-pointer">Reviews</a>
       <a href="#fqas" class="duration-200 hover:text-indigo-400 cursor-pointer">FAQs</a>
+      <a href="/about" class="duration-200 hover:text-indigo-400 cursor-pointer">About Us</a>
       <button class="specialBtn">Start free today</button>
     </nav>
   </div>
