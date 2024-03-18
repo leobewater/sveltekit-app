@@ -1,3 +1,6 @@
+Video: https://www.youtube.com/watch?v=vb7CgDcA_6U&t=493s&ab_channel=freeCodeCamp.org
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
