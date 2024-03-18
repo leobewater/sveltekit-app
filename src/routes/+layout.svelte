@@ -1,11 +1,21 @@
 <script>
   import "../app.css";
-  import { goto } from "$app/navigation";
+  import { goto, beforeNavigate, afterNavigate } from "$app/navigation";
 
   const handleClick = () => {
     console.log("Placing your order");
-    goto('/products')
+    // Replace the current history state instead of adding a new state
+    // goto("/products", { replaceState: true });
+    goto("/products");
   };
+
+  // good to show and hide loading spinner
+  beforeNavigate((navigation) => {
+    console.log({ before: navigation });
+  });
+  afterNavigate((navigation) => {
+    console.log({ after: navigation });
+  });
 </script>
 
 <nav class="p-3 bg-green-400 mb-2 space-x-4 font-semibold">
