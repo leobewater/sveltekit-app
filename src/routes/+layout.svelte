@@ -8,6 +8,9 @@
   <a href="/profile">Profile</a>
   <a href="/blog">Blog</a>
   <a href="/products">Products</a>
+  <a href="/products/1/reviews/200">Products Review</a>
+  <a href="/docs">Docs</a>
+  <a href="/docs/feature1/concept1/example1">Docs with ...slug</a>
 </nav>
 <slot />
 <Footer />
