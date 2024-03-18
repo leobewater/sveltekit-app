@@ -11,6 +11,8 @@
   <a href="/products/1/reviews/200">Products Review</a>
   <a href="/docs">Docs</a>
   <a href="/docs/feature1/concept1/example1">Docs with ...slug</a>
+  <a href="/marketing/">Marketing(optional param)</a>
+  <a href="/marketing/fr">Marketing(Fr)</a>
 </nav>
 <slot />
 <Footer />
