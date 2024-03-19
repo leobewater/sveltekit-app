@@ -8,6 +8,20 @@ export const GET: RequestHandler = async (requestEvent) => {
   const comment = comments.find(
     (comment) => comment.id === parseInt(commentId)
   );
-  
+
   return json(comment);
+};
+
+export const PATCH: RequestHandler = async (requestEvent) => {
+  const { params, request } = requestEvent;
+  const { commentId } = params;
+  const { text } = await request.json();
+  const comment = comments.find(
+    (comment) => comment.id === parseInt(commentId)
+  );
+  if (comment) {
+    comment.text = text;
+    return json(comment);
+  }
+  return json(null);
 };
