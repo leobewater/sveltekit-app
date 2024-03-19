@@ -1,16 +1,16 @@
 import { comments } from "$lib/comments";
 import { json } from "@sveltejs/kit";
 
-export function GET() {
+export const GET = () => {
   // return new Response(JSON.stringify(comments), {
   //   headers: {
   //     "Content-Type": "application/json",
   //   },
   // });
   return json(comments);
-}
+};
 
-export async function POST(requestEvent) {
+export const POST = async (requestEvent) => {
   const { request } = requestEvent;
   const { text } = await request.json();
   const newComment = {
@@ -21,4 +21,4 @@ export async function POST(requestEvent) {
 
   // return new Response(JSON.stringify(newComment), { status: 201 });
   return json(newComment, { status: 201 });
-}
+};
